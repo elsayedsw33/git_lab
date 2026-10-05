@@ -209,24 +209,60 @@ PS D:\gitwork> git branch --merged
 
 * Verification output of `ssh -T git@github.com`:
 
-\# Paste output here (Ensure no private keys or sensitive credentials are shown)
+\# Hi elsayedsw33! You've successfully authenticated, but GitHub does not provide shell access.
 
 ### 2\. Synchronization: `git fetch` vs `git pull`
 
 * Output showing the difference after a remote commit was fetched:
 
-\# Paste fetch status & subsequent pull output
+\#  git status
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+PS D:\test_remote> git log origin
+commit ba2bb0d7f0aa2dc8609be6cd7b3aceda591fff22 (origin/main, origin/HEAD)
+Author: elsayedsw33 <elsayedswalm@gmail.com>
+Date:   Mon Oct 5 03:14:34 2026 +0300
+
+    Add content to file.txt
+
+commit 3f0f07817b215cde4c9a957be479a0d30c292b26
+Author: elsayedsw33 <elsayedswalm@gmail.com>
+Date:   Mon Oct 5 03:05:58 2026 +0300
+
+    Initial commit
+
+\#  git pull origin main
+From https://github.com/elsayedsw33/remote_repo
+ * branch            main       -> FETCH_HEAD
+PS D:\test_remote> git log
+commit ba2bb0d7f0aa2dc8609be6cd7b3aceda591fff22 (HEAD -> main, origin/main, origin/HEAD)
+Author: elsayedsw33 <elsayedswalm@gmail.com>
+Date:   Mon Oct 5 03:14:34 2026 +0300
+
+    Add content to file.txt
+
+commit 3f0f07817b215cde4c9a957be479a0d30c292b26
+Author: elsayedsw33 <elsayedswalm@gmail.com>
+Date:   Mon Oct 5 03:05:58 2026 +0300
+
+    Initial commit
 
 ### 3\. VS Code & GitLens Inspection
 
-* Screenshot showing GitLens commit graph and inline blame: *(Insert screenshot here)*
+* Screenshot showing GitLens commit graph and inline blame: *(![My screenshot](screenshot2.png))*
 
 ### 4\. Independent Contribution & PR Simulation
 
-* Secondary Repository URL (`dummy-project`): `[Insert dummy-project Repo Link]`  
+* Secondary Repository URL (`dummy-project`): `[https://github.com/elsayedsw33/dummy-project]`  
 * Remote Configuration (`git remote -v`):
 
-\# Paste output showing origin and upstream/secondary remotes
+\# dum_origin      https://github.com/elsayedsw33/dummy-project.git (fetch)
+dum_origin      https://github.com/elsayedsw33/dummy-project.git (push)
+origin  https://github.com/elsayedsw33/git_lab.git (fetch)
+origin  https://github.com/elsayedsw33/git_lab.git (push)
 
-* **Pull Request Link:** `[Insert link to the PR opened and merged on dummy-project]`  
-* Screenshot of the merged PR on GitHub: *(Insert screenshot here)*
+* **Pull Request Link:** `[https://github.com/elsayedsw33/dummy-project/pull/1#issue-5710035013]`  
+* Screenshot of the merged PR on GitHub: *(![alt text](<Screenshot 2026-10-05 130223.png>))*
